@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: preto-show
+    runtime: static
+    buildCommand: echo "Static site - no build"
+    staticPublishPath: .
+    headers:
+      - path: /*
+        name: X-Frame-Options
+        value: SAMEORIGIN
+      - path: /*.css
+        name: Cache-Control
+        value: public, max-age=3600
+      - path: /*.js
+        name: Cache-Control
+        value: public, max-age=3600

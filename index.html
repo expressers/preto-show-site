@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="pt-AO">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Preto Show — Site Oficial</title>
+<meta name="description" content="Preto Show — cantor e produtor angolano. Música, vídeos, concertos e loja oficial.">
+<meta name="theme-color" content="#0B0908">
+<meta property="og:title" content="Preto Show — Site Oficial">
+<meta property="og:description" content="Afro-beat, hip-hop, R&B e kuduro com versatilidade. Ouve o EP OZA.">
+<meta property="og:image" content="https://i.scdn.co/image/ab67616d0000b273b7d913bc96e2ae010678d33b">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230B0908'/%3E%3Cpath d='M8 56 32 8l24 48z' fill='%23D62631'/%3E%3Ccircle cx='32' cy='40' r='7' fill='%23FFC21A'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- PRELOADER -->
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader__pattern"></div>
+  <div class="loader__inner">
+    <div class="loader__bpm"><span id="loaderCount">000</span><small>BPM</small></div>
+    <div class="loader__name">PRETO&nbsp;SHOW</div>
+  </div>
+</div>
+
+<!-- CURSOR -->
+<div class="cursor" id="cursor"><span></span></div>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <a href="#top" class="nav__logo" aria-label="Preto Show — início">
+    <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M4 44 24 4l20 40z" fill="currentColor"/><circle cx="24" cy="31" r="5.5" class="logo-dot"/></svg>
+    <span>PRETO SHOW</span>
+  </a>
+  <nav class="nav__links" id="navLinks" aria-label="Principal">
+    <a href="#musica">Música</a>
+    <a href="#videos">Vídeos</a>
+    <a href="#tour">Tour</a>
+    <a href="#loja">Loja</a>
+    <a href="#sobre">Sobre</a>
+  </nav>
+  <div class="nav__right">
+    <button class="beat-toggle" id="beatToggle" aria-pressed="true" title="Pulsar a 150 BPM">
+      <i></i><i></i><i></i><i></i><span>150</span>
+    </button>
+    <a href="#newsletter" class="btn btn--small btn--gold magnetic">Junta-te</a>
+    <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<div class="menu" id="menu" aria-hidden="true">
+  <div class="menu__pattern"></div>
+  <nav>
+    <a href="#musica" data-i="01">Música</a>
+    <a href="#videos" data-i="02">Vídeos</a>
+    <a href="#tour" data-i="03">Tour</a>
+    <a href="#loja" data-i="04">Loja</a>
+    <a href="#sobre" data-i="05">Sobre</a>
+    <a href="#newsletter" data-i="06">Newsletter</a>
+  </nav>
+</div>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <canvas class="hero__canvas" id="heroCanvas" aria-hidden="true"></canvas>
+    <div class="hero__vignette"></div>
+    <div class="hero__meta mono">
+      <span>LUANDA · ANGOLA</span>
+      <span class="hero__live"><i></i> NOVO EP — DISPONÍVEL</span>
+    </div>
+    <h1 class="hero__title" aria-label="Preto Show">
+      <span class="line"><span class="word pattern-text" data-text="PRETO">PRETO</span></span>
+      <span class="line"><span class="word outline" data-text="SHOW">SHOW</span></span>
+    </h1>
+    <div class="hero__release">
+      <a class="hero__cover tilt" href="#musica" data-album="oza">
+        <img src="https://i.scdn.co/image/ab67616d0000b273b7d913bc96e2ae010678d33b" alt="Capa do EP OZA" width="640" height="640">
+        <span class="hero__cover-shine"></span>
+      </a>
+      <div>
+        <p class="mono eyebrow">ÚLTIMO LANÇAMENTO · EP · 2026</p>
+        <h2 class="hero__release-title">OZA</h2>
+        <div class="hero__ctas">
+          <button class="btn btn--red magnetic" data-play="album/2dEtPs0c1kMsjwv6ZechBi">▶ Ouvir agora</button>
+          <a class="btn btn--ghost magnetic" href="https://open.spotify.com/album/2dEtPs0c1kMsjwv6ZechBi" target="_blank" rel="noopener">Spotify ↗</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero__scroll mono">SCROLL <span></span></div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee marquee--red" aria-hidden="true">
+    <div class="marquee__track">
+      <span>OZA</span><b>✦</b><span>CORINGA</span><b>✦</b><span>DANÇA ASSIM</span><b>✦</b><span>DJEGUEDJE</span><b>✦</b><span>150 BPM</span><b>✦</b><span>VAI DEVAGAR</span><b>✦</b><span>TE FIZ QUÊ</span><b>✦</b><span>DRIP NA GOIABA</span><b>✦</b>
+      <span>OZA</span><b>✦</b><span>CORINGA</span><b>✦</b><span>DANÇA ASSIM</span><b>✦</b><span>DJEGUEDJE</span><b>✦</b><span>150 BPM</span><b>✦</b><span>VAI DEVAGAR</span><b>✦</b><span>TE FIZ QUÊ</span><b>✦</b><span>DRIP NA GOIABA</span><b>✦</b>
+    </div>
+  </div>
+
+  <!-- MUSIC -->
+  <section class="section music" id="musica">
+    <div class="section__head">
+      <p class="mono eyebrow reveal">01 — DISCOGRAFIA</p>
+      <h2 class="section__title reveal"><span>Música</span></h2>
+      <p class="section__lead reveal">Afro-beat, hip-hop, R&amp;B, zouk e a batida de Luanda. Do <em>Panamera</em> ao <em>OZA</em> — carrega numa capa para ouvir.</p>
+    </div>
+
+    <div class="filters reveal" role="tablist" aria-label="Filtrar lançamentos">
+      <button class="filter is-active" data-filter="all" role="tab" aria-selected="true">Tudo</button>
+      <button class="filter" data-filter="album" role="tab" aria-selected="false">Álbuns &amp; EPs</button>
+      <button class="filter" data-filter="single" role="tab" aria-selected="false">Singles</button>
+    </div>
+
+    <div class="releases" id="releases"></div>
+
+    <div class="top-tracks reveal">
+      <div class="top-tracks__head">
+        <p class="mono eyebrow">MAIS OUVIDAS</p>
+        <a class="link-arrow" href="https://open.spotify.com/artist/4YlvKlWWHJl1TuXvrk94OW" target="_blank" rel="noopener">Perfil no Spotify ↗</a>
+      </div>
+      <div class="embed-wrap">
+        <iframe title="Preto Show no Spotify" loading="lazy" src="https://open.spotify.com/embed/artist/4YlvKlWWHJl1TuXvrk94OW?utm_source=generator&amp;theme=0" width="100%" height="380" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE / BPM BREAK -->
+  <section class="bpm-break" aria-label="150 BPM">
+    <div class="bpm-break__ring"></div>
+    <div class="bpm-break__ring r2"></div>
+    <div class="bpm-break__ring r3"></div>
+    <p class="bpm-break__num"><span id="bpmNum">150</span><small>BPM</small></p>
+    <p class="mono bpm-break__cap">O coração deste site bate ao ritmo de um clássico.</p>
+  </section>
+
+  <!-- VIDEOS -->
+  <section class="section videos" id="videos">
+    <div class="section__head">
+      <p class="mono eyebrow reveal">02 — VISUAIS</p>
+      <h2 class="section__title reveal"><span>Vídeos</span></h2>
+    </div>
+    <div class="video-feature reveal" id="videoFeature">
+      <div class="video-feature__screen">
+        <div class="video-feature__pattern"></div>
+        <button class="video-feature__play magnetic" id="videoPlay" aria-label="Ver vídeos no YouTube">
+          <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        </button>
+        <p class="video-feature__title"><span class="mono">EM DESTAQUE</span>CORINGA</p>
+      </div>
+    </div>
+    <div class="video-list" id="videoList"></div>
+  </section>
+
+  <!-- TOUR -->
+  <section class="section tour" id="tour">
+    <div class="section__head">
+      <p class="mono eyebrow reveal">03 — AO VIVO</p>
+      <h2 class="section__title reveal"><span>Tour</span></h2>
+    </div>
+
+    <div class="tour-soon reveal">
+      <div class="tour-soon__text">
+        <p class="mono eyebrow gold">PRÓXIMAS DATAS</p>
+        <h3>Novas datas em breve.</h3>
+        <p>Sê o primeiro a saber quando os bilhetes abrirem — sem spam, só concertos.</p>
+      </div>
+      <a href="#newsletter" class="btn btn--gold magnetic">Avisa-me</a>
+    </div>
+
+    <p class="mono eyebrow reveal tour-archive-label">ARQUIVO DE PALCO</p>
+    <ul class="tour-list" id="tourList"></ul>
+  </section>
+
+  <!-- MARQUEE 2 -->
+  <div class="marquee marquee--gold" aria-hidden="true">
+    <div class="marquee__track reverse">
+      <span>LOJA OFICIAL</span><b>●</b><span>EDIÇÃO OZA</span><b>●</b><span>FEITO EM LUANDA</span><b>●</b><span>LOJA OFICIAL</span><b>●</b><span>EDIÇÃO OZA</span><b>●</b><span>FEITO EM LUANDA</span><b>●</b>
+      <span>LOJA OFICIAL</span><b>●</b><span>EDIÇÃO OZA</span><b>●</b><span>FEITO EM LUANDA</span><b>●</b><span>LOJA OFICIAL</span><b>●</b><span>EDIÇÃO OZA</span><b>●</b><span>FEITO EM LUANDA</span><b>●</b>
+    </div>
+  </div>
+
+  <!-- STORE -->
+  <section class="section store" id="loja">
+    <div class="section__head">
+      <p class="mono eyebrow reveal">04 — MERCH</p>
+      <h2 class="section__title reveal"><span>Loja</span></h2>
+      <p class="section__lead reveal">A colecção <em>OZA</em> está a caminho. Faz o pré-registo e recebe acesso antecipado.</p>
+    </div>
+    <div class="products" id="products"></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about" id="sobre">
+    <div class="about__grid">
+      <div class="about__visual reveal">
+        <div class="about__frame">
+          <img src="https://i.scdn.co/image/ab6761610000e5eb0e9858f376c59eb87b593e73" alt="Preto Show" loading="lazy">
+          <div class="about__frame-pattern"></div>
+        </div>
+        <div class="about__stamp" aria-hidden="true">
+          <svg viewBox="0 0 200 200"><defs><path id="circ" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs><text><textPath href="#circ">VERSATILIDADE · LUANDA · DESDE 2016 · </textPath></text></svg>
+          <span>✦</span>
+        </div>
+      </div>
+      <div class="about__text">
+        <p class="mono eyebrow reveal">05 — BIOGRAFIA</p>
+        <h2 class="section__title reveal"><span>Sobre</span></h2>
+        <p class="about__big reveal">Cantor e produtor angolano. Afro-beat, funk, hip-hop, R&amp;B e zouk — num só som.</p>
+        <p class="reveal">Começou no grupo de afro-house <strong>The Groove</strong> antes de lançar a carreira a solo com o EP <em>Panamera</em> (2017). Em 2018 juntou-se a Biura em <em>Clepatia</em>, e em 2020 lançou <em>Banger</em>, com Anitta, Nego do Borel e Anselmo Ralph.</p>
+        <p class="reveal">Levou o hit <em>150 BPM</em> ao palco da Baía de Luanda ao lado de Anitta no festival Sons do Atlântico, e deu voz à versão portuguesa do hino do Euro 2020, <em>Vamos com Tudo</em>.</p>
+        <dl class="stats reveal">
+          <div><dt class="counter" data-to="424">0</dt><dd>mil ouvintes mensais no Spotify</dd></div>
+          <div><dt class="counter" data-to="50">0</dt><dd>lançamentos e contando</dd></div>
+          <div><dt class="counter" data-to="10">0</dt><dd>anos de carreira</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter" id="newsletter">
+    <div class="newsletter__pattern"></div>
+    <div class="newsletter__inner">
+      <p class="mono eyebrow gold reveal">LISTA OFICIAL</p>
+      <h2 class="newsletter__title reveal">Não percas<br>o próximo <span>drop.</span></h2>
+      <form class="newsletter__form reveal" id="newsletterForm" novalidate>
+        <label class="sr-only" for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="o.teu@email.com" autocomplete="email" required>
+        <label class="sr-only" for="country">País</label>
+        <select id="country" name="country">
+          <option>Angola</option><option>Portugal</option><option>Brasil</option><option>Moçambique</option><option>Cabo Verde</option><option>Outro</option>
+        </select>
+        <button class="btn btn--red magnetic" type="submit">Subscrever</button>
+      </form>
+      <p class="newsletter__msg mono" id="newsletterMsg" role="status" aria-live="polite"></p>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer__big" aria-hidden="true">PRETO SHOW</div>
+  <div class="footer__row">
+    <div class="footer__links">
+      <a href="https://open.spotify.com/artist/4YlvKlWWHJl1TuXvrk94OW" target="_blank" rel="noopener">Spotify</a>
+      <a href="https://music.apple.com/artist/989637274" target="_blank" rel="noopener">Apple Music</a>
+      <a href="https://audiomack.com/preto-shows" target="_blank" rel="noopener">Audiomack</a>
+      <a href="https://www.youtube.com/results?search_query=Preto+Show" target="_blank" rel="noopener">YouTube</a>
+    </div>
+    <p class="mono footer__copy">© <span id="year"></span> Preto Show. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<!-- PLAYER MODAL -->
+<div class="player" id="player" aria-hidden="true" role="dialog" aria-label="Leitor">
+  <div class="player__backdrop" data-close></div>
+  <div class="player__box">
+    <button class="player__close" data-close aria-label="Fechar">✕</button>
+    <div class="player__frame" id="playerFrame"></div>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast mono" id="toast" role="status" aria-live="polite"></div>
+
+<div class="grain" aria-hidden="true"></div>
+
+<script src="main.js" defer></script>
+</body>
+</html>
