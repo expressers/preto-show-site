@@ -206,7 +206,7 @@ body.is-ready .hero__release{opacity:1;transform:none}
 /* ---------- Sections ---------- */
 .section{padding:clamp(80px,12vw,160px) var(--pad);position:relative}
 .section__head{margin-bottom:clamp(36px,6vw,72px);max-width:900px}
-.section__title{margin:0;font-family:var(--f-display);font-weight:400;text-transform:uppercase;font-size:clamp(64px,13vw,200px);line-height:.85;overflow:hidden}
+.section__title{margin:0;font-family:var(--f-display);font-weight:400;text-transform:uppercase;font-size:clamp(64px,13vw,200px);line-height:.85;overflow:hidden;padding-top:.14em;margin-top:-.14em}
 .section__title span{display:inline-block}
 .section__lead{font-size:clamp(17px,1.6vw,21px);max-width:560px;color:var(--muted);margin:22px 0 0}
 
